@@ -2,11 +2,7 @@ import React from "react";
 import Main from "@/components/Main";
 
 const Page = () => {
-  return (
-    <div>
-      <Main />
-    </div>
-  );
+  return <Main />;
 };
 
 export default Page;

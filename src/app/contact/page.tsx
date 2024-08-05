@@ -33,8 +33,8 @@ const ContactPage = () => {
               className=" w-full border-2 rounded-md py-2 px-3 bg-transparent text-white"
               name=""
               id=""
-              cols="30"
-              rows="10"
+              cols={30}
+              rows={10}
               placeholder="message"
             ></textarea>
             <button className="px-7 py-3 bg-green-700 text-white lg:self-start rounded-md self-start">

@@ -12,7 +12,7 @@ const Main = () => {
         </h1>
         <h2 className="text-2xl">
           Turning your idea into Reality. We bring together the teams form the
-          global tech industry
+          global tech industry.
         </h2>
         <Link
           className="px-4 py-3 bg-green-700 text-white lg:self-start rounded-md "

@@ -21,7 +21,7 @@ const BlogPage = async () => {
 
   return (
     <div className="px-4 md:px-10 xl:px-20 2xl:px-40 flex flex-col  h-auto w-full">
-      {data.map((item) => (
+      {data.map((item: any) => (
         <Link href={`/blog/1${item.id}`} id={item.id} key={item.id}>
           <div className="w-full flex flex-col gap-3 py-4 text-center justify-center items-center rounded-md hover:bg-gray-800 md:flex-row md:justify-between md:px-4">
             <div className="relative w-[200px] h-[200px]">

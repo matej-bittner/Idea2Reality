@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PortfolioPage = () => {
   return (
-    <div className="px-4 md:px-10 xl:px-20 2xl:px-40 h-[calc(100vh-96px)]">
+    <div className="px-4 md:px-10 xl:px-20 2xl:px-40 h-[calc(100vh-96px)] ">
       <div className="flex flex-col gap-8">
         <h1 className="text-5xl font-bold">Our Works</h1>
         <h2 className="text-3xl">Choose Galery</h2>
@@ -25,7 +25,7 @@ const PortfolioPage = () => {
             <Image src="/websites.jpg" alt="" fill className="object-cover" />
           </Link>
         </div>
-        <div className="border-2 border-white max-w-[400px] h-[40vh] md:h-auto  aspect-[3/4] md:w-1/3 relative rounded-md overflow-clip hover:scale-105 transition-all duration-200">
+        <div className="border-2 border-white max-w-[400px] h-[40vh] md:h-auto  aspect-[3/4] md:w-1/3 relative rounded-md overflow-clip hover:scale-105 transition-all duration-200 max-md:mb-8">
           <Link href="/">
             <Image src="/apps.jpg" alt="" fill className="object-cover" />
           </Link>
