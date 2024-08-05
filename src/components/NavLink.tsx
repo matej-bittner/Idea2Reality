@@ -3,7 +3,11 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavLink = ({ item }) => {
+const NavLink = ({
+  item,
+}: {
+  item: { id: number; title: string; url: string };
+}) => {
   const pathName = usePathname();
 
   return (

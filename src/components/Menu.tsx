@@ -54,7 +54,7 @@ const Menu = () => {
       )}
 
       {open && (
-        <div className="w-screen absolute left-0 top-[6rem] h-1/2 text-white flex flex-col justify-center items-center gap-7 bg-gradient-to-b from-gray-900 to-gray-800 border-t-2 border-gray-700 z-50">
+        <div className="w-screen absolute left-0 top-[6rem] h-1/2 text-white flex flex-col justify-center items-center gap-7 bg-gray-900 border-b-2 border-t-2 border-gray-700 z-50">
           {links.map((item) => (
             <Link
               onClick={() => setOpen(false)}

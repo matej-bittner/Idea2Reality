@@ -25,7 +25,12 @@ const BlogPage = async () => {
         <Link href={`/blog/1${item.id}`} id={item.id} key={item.id}>
           <div className="w-full flex flex-col gap-3 py-4 text-center justify-center items-center rounded-md hover:bg-gray-800 md:flex-row md:justify-between md:px-4">
             <div className="relative w-[200px] h-[200px]">
-              <Image src="/blog.jpg" fill alt="" className="rounded-md" />
+              <Image
+                src="/illustration.png"
+                fill
+                alt=""
+                className="rounded-md"
+              />
             </div>
             <div className=" md:h-[200px] md:w-[calc(100%-200px-24px)] md:flex md:flex-col md:justify-center md:gap-6 md:text-left">
               <h1 className="text-2xl">{item.title}</h1>

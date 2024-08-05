@@ -12,11 +12,12 @@ async function getData(id: number) {
 
   return res.json();
 }
-const Page = async ({ params }) => {
+const Page = async ({ params }: { params: { id: number } }) => {
   const data = await getData(params.id);
   return (
     <div className="px-4 md:px-10 xl:px-20 2xl:px-40 ">
       <div className="flex flex-col md:flex-row md:justify-between md:gap-8 gap-2 h-[calc(100vh-96px)] md:h-auto md:min-h-[400px] ">
+        {/*<div className="flex flex-col md:flex-row md:justify-between md:gap-8 gap-2 h-[calc(100vh-96px)] md:h-auto md:min-h-[400px] ">*/}
         {/*text*/}
         <div className="flex gap-7 flex-col md:w-1/2 md:h-auto h:2/3 sm:h-1/2 justify-center">
           <h1 className="text-3xl font-bold">{data.title}</h1>
@@ -33,8 +34,13 @@ const Page = async ({ params }) => {
           </div>
         </div>
         {/*image*/}
-        <div className="md:w-1/2 md:h-auto h-1/3 sm:h-1/2 relative ">
-          <Image src="/blog.jpg" fill className="object-contain " alt="" />
+        <div className="md:w-1/2 md:h-auto h-1/3 sm:h-1/2 relative flex-1  mb-2">
+          <Image
+            src="/illustration.png"
+            fill
+            className="object-contain "
+            alt=""
+          />
         </div>
       </div>
       <div className="flex flex-col mt-2 gap-4 ">
